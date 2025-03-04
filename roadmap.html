@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Development Roadmap - Open Legal Tools</title>
+    <meta name="description" content="Our development timeline and future plans for Gavel and other Open Legal Tools projects.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Literata:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="/">
+                    <svg class="logo-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="5" width="12" height="3" rx="1" fill="#002776"/>
+                        <rect x="12" y="3" width="6" height="7" rx="1" fill="#002776"/>
+                        <rect x="5" y="8" width="3" height="10" rx="1" fill="#002776"/>
+                        <rect y="18" width="12" height="3" rx="1" fill="#f1c40f"/>
+                    </svg>
+                    <span>Open Legal Tools</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products/gavel.html">Products</a></li>
+                    <li><a href="roadmap.html" class="active">Roadmap</a></li>
+                    <li><a href="https://github.com/open-legal-tools" class="button button-sm">GitHub</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Development Roadmap</h1>
+                <div class="accent-line"></div>
+                <p class="hero-text">
+                    Building the future of legal tools with a thoughtful, phased approach
+                </p>
+            </div>
+        </section>
+
+        <section class="roadmap-detail">
+            <div class="container">
+                <h2>Gavel Development Timeline</h2>
+                
+                <div class="timeline-extended">
+                    <div class="timeline-item">
+                        <div class="timeline-marker active"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Phase 1: Core Navigation System</h3>
+                                <p class="timeline-date">Q2-Q3 2025</p>
+                            </div>
+                            <div class="timeline-body">
+                                <p><strong>Focus:</strong> Build the foundation for document viewing and intelligent navigation</p>
+                                
+                                <h4>Key Deliverables:</h4>
+                                <ul>
+                                    <li>
+                                        <strong>Folder Monitoring System</strong>
+                                        <ul>
+                                            <li>Local folder watching</li>
+                                            <li>OneDrive/SharePoint integration</li>
+                                            <li>Automatic document categorization</li>
+                                            <li>Change detection</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Three-pane Document Viewer</strong>
+                                        <ul>
+                                            <li>PDF.js integration</li>
+                                            <li>Document organization and pane assignment</li>
+                                            <li>Keyboard navigation controls (e,d/y,h/i,k)</li>
+                                            <li>Document state persistence</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Citation Detection and Linking</strong>
+                                        <ul>
+                                            <li>Eyecite integration via PyO3</li>
+                                            <li>Interactive citation links with preview functionality</li>
+                                            <li>Intelligent pane management</li>
+                                            <li>Precise navigation to cited content</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Basic Document Search</strong>
+                                        <ul>
+                                            <li>Full-text search within documents</li>
+                                            <li>Simple results highlighting</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                
+                                <h4>Technical Milestones:</h4>
+                                <ul>
+                                    <li>Tauri + Rust foundation established</li>
+                                    <li>PyO3 bridge for Eyecite integration</li>
+                                    <li>Document processing pipeline (basic version)</li>
+                                    <li>PDF rendering and text extraction</li>
+                                    <li>File system monitoring implementation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Phase 2: Enhanced Search & Navigation</h3>
+                                <p class="timeline-date">Q4 2025</p>
+                            </div>
+                            <div class="timeline-body">
+                                <p><strong>Focus:</strong> Improve search capabilities and document understanding</p>
+                                
+                                <h4>Key Deliverables:</h4>
+                                <ul>
+                                    <li>
+                                        <strong>Advanced Search Features</strong>
+                                        <ul>
+                                            <li>Cross-document search</li>
+                                            <li>Search filters (document type, date range)</li>
+                                            <li>Search result heat map visualization</li>
+                                            <li>Search term highlighting</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Document Structure Analysis</strong>
+                                        <ul>
+                                            <li>Automatic table of contents generation</li>
+                                            <li>Section detection and navigation</li>
+                                            <li>Enhanced citation context understanding</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>User Annotations</strong>
+                                        <ul>
+                                            <li>Text highlighting</li>
+                                            <li>Margin notes</li>
+                                            <li>Annotation navigation and search</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Basic Collaboration Features</strong>
+                                        <ul>
+                                            <li>Document usage tracking</li>
+                                            <li>Visual indicators of who is viewing/annotating documents</li>
+                                            <li>Simple locking mechanism to prevent edit conflicts</li>
+                                            <li>User activity awareness in the interface</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                
+                                <h4>Technical Milestones:</h4>
+                                <ul>
+                                    <li>Enhanced text processing pipeline</li>
+                                    <li>Document structure analysis module</li>
+                                    <li>Annotation storage and retrieval system</li>
+                                    <li>Search visualization improvements</li>
+                                    <li>Document locking and user awareness system</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Phase 3: Intelligent Citations</h3>
+                                <p class="timeline-date">Q1-Q2 2026</p>
+                            </div>
+                            <div class="timeline-body">
+                                <p><strong>Focus:</strong> Integrate with existing legal workflows</p>
+                                
+                                <h4>Key Deliverables:</h4>
+                                <ul>
+                                    <li>
+                                        <strong>Advanced Citation Detection</strong>
+                                        <ul>
+                                            <li>Comprehensive citation recognition</li>
+                                            <li>Citation validation</li>
+                                            <li>Citation resolution within document collection</li>
+                                            <li>External citation handling</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Citation Relationship Mapping</strong>
+                                        <ul>
+                                            <li>Citation graph visualization</li>
+                                            <li>Related citation discovery</li>
+                                            <li>Citation impact analysis</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Basic Word Integration</strong>
+                                        <ul>
+                                            <li>Citation recognition in Word documents</li>
+                                            <li>Document referencing between Word and Gavel</li>
+                                            <li>Copy/paste enhancement for citations</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Workspace Management</strong>
+                                        <ul>
+                                            <li>Workspace saving and restoration</li>
+                                            <li>Multiple case handling</li>
+                                            <li>Session persistence</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                
+                                <h4>Technical Milestones:</h4>
+                                <ul>
+                                    <li>Word integration API</li>
+                                    <li>Browser integration components</li>
+                                    <li>Workspace state management system</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Phase 4: AI Assistance</h3>
+                                <p class="timeline-date">Q3 2026 onwards</p>
+                            </div>
+                            <div class="timeline-body">
+                                <p><strong>Focus:</strong> Expand beyond Indiana and add intelligent assistance</p>
+                                
+                                <h4>Key Deliverables:</h4>
+                                <ul>
+                                    <li>
+                                        <strong>Multi-jurisdictional Support</strong>
+                                        <ul>
+                                            <li>Implement pluggable jurisdiction system</li>
+                                            <li>Add support for federal courts</li>
+                                            <li>Support for additional state courts</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>AI Assistance (exploratory)</strong>
+                                        <ul>
+                                            <li>Document summarization</li>
+                                            <li>Relationship mapping between documents</li>
+                                            <li>Citation suggestion</li>
+                                            <li>Query-based document navigation</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                
+                                <h4>Technical Milestones:</h4>
+                                <ul>
+                                    <li>Jurisdiction module system</li>
+                                    <li>AI integration framework</li>
+                                    <li>Enhanced NLP capabilities</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature-request">
+            <div class="container">
+                <h2>Help Shape Our Roadmap</h2>
+                <div class="accent-line"></div>
+                <p>
+                    Our roadmap is guided by the needs of legal professionals and other users who interact with legal documents. 
+                    We welcome your input on which features would be most valuable to you.
+                </p>
+                
+                <div class="center-content">
+                    <a href="https://github.com/open-legal-tools/gavel/issues/new?labels=feature-request&template=feature_request.md" class="button">Suggest a Feature</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contribution">
+            <div class="container">
+                <h2>Get Involved</h2>
+                <div class="accent-line"></div>
+                
+                <div class="two-columns">
+                    <div class="column">
+                        <h3>Developer Contributions</h3>
+                        <p>
+                            We welcome contributions from developers of all skill levels. Whether you're experienced with 
+                            Rust, TypeScript, or just want to help improve our documentation, there's a place for you 
+                            in our open-source community.
+                        </p>
+                        <p>
+                            <a href="https://github.com/open-legal-tools/gavel/blob/main/CONTRIBUTING.md">Read our contributor guide</a> to learn how to get started.
+                        </p>
+                    </div>
+                    <div class="column">
+                        <h3>Non-Technical Contributions</h3>
+                        <p>
+                            Not a developer? You can still make valuable contributions to our project through:
+                        </p>
+                        <ul>
+                            <li>User testing and feedback</li>
+                            <li>Documentation improvements</li>
+                            <li>UI/UX suggestions</li>
+                            <li>Legal expertise and insights</li>
+                            <li>Spreading the word about Open Legal Tools</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Join the Movement</h2>
+                <p>Help us make legal documents more accessible, navigable, and understandable for everyone.</p>
+                <div class="cta-buttons">
+                    <a href="https://github.com/open-legal-tools" class="button">Contribute on GitHub</a>
+                    <a href="contact.html" class="button button-outline">Contact Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <svg class="logo-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="5" width="12" height="3" rx="1" fill="#002776"/>
+                        <rect x="12" y="3" width="6" height="7" rx="1" fill="#002776"/>
+                        <rect x="5" y="8" width="3" height="10" rx="1" fill="#002776"/>
+                        <rect y="18" width="12" height="3" rx="1" fill="#f1c40f"/>
+                    </svg>
+                    <span>Open Legal Tools</span>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-nav">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="products/gavel.html">Gavel</a></li>
+                            <li><a href="roadmap.html">Roadmap</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="https://github.com/open-legal-tools">GitHub</a></li>
+                            <li><a href="https://github.com/open-legal-tools/gavel/releases">Downloads</a></li>
+                            <li><a href="https://github.com/open-legal-tools/gavel/wiki">Documentation</a></li>
+                            <li><a href="license.html">License</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Open Legal Tools. Licensed under <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">GNU AGPL v3.0</a>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
