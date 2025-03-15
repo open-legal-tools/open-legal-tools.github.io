@@ -7,15 +7,15 @@ title: Our Vision - Open Legal Tools
 
 ## The Law Wants to Be Free
 
-The law itself is an output of democratic processes; it belongs to everyone. Yet today, much of legal information remains difficult to access and navigate, hidden behind paywalls or trapped in formats that inhibit understanding.
+The law itself is an output of democratic processes; it belongs to everyone. Yet today, legal information remains difficult to access and navigate, often hidden behind paywalls or trapped in formats that inhibit understanding.
 
 ## The Conversation of Law
 
 Appellate cases applying and developing the law are part of a conversation that has been ongoing for generations and will continue long into the future. These cases should be freely accessible and maintained like a public park or digital library for anyone to explore.
 
-## Building the Public Beach
+## Building Pathways to Understanding
 
-Having access to the ocean of law isn't enough if there's no public beach from which to enjoy it. We're building that beach - tools that make legal information accessible, navigable, and understandable for everyone.
+Having access to legal documents isn't enough without the tools to navigate and understand them. We're building these pathways – tools that make legal information accessible, navigable, and comprehensible for everyone, regardless of legal training.
 
 ## Starting with Those Who Need It Most
 
@@ -23,7 +23,7 @@ We begin by serving judicial clerks - the legal professionals in the trenches wh
 
 ## A Platform for Accessibility
 
-While we start with judicial clerks, our vision extends to all who interact with the law - judges, attorneys, pro se litigants, students, researchers, business owners, teachers, a party to a case, and the general public. By building a solid foundation with thoughtful, modular design, we create a platform that can grow to serve everyone.
+While we start with judicial clerks, our vision extends to all who interact with the law - judges, attorneys, pro se litigants, students, researchers, business owners, teachers, parties to cases, and the general public. By building a solid foundation with thoughtful, modular design, we create a platform that can grow to serve everyone.
 
 ## Open by Design
 
